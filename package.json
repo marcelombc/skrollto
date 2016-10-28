@@ -1,6 +1,6 @@
 {
   "name": "skrollto",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Lightweight cross-browser animated scrolling",
   "main": "lib/skrollto.js",
   "repository": {
