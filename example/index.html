@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width">
+
+        <title>skrollto example</title>
+    </head>
+    <style>
+        body {
+            position: relative;
+        }
+
+        button {
+            position: absolute;
+            bottom: 50px;
+            right: 50px;
+        }
+
+        ul {
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            width: 100%;
+            height: 200px;
+        }
+    </style>
+    <body>
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+
+        <button onclick="scrollPageToTop()">Scroll top</button>
+
+        <script src="../lib/skrollto.js"></script>
+        <script>
+            Array.prototype.slice.call(document.getElementsByTagName('li')).forEach(function (li) {
+                li.style.backgroundColor = '#' + Math.floor(Math.random()*16777215).toString(16);
+            });
+
+            function scrollPageToTop() {
+                skrollto(0, undefined, undefined, alert.bind(null, 'Complete!'));
+            }
+        </script>
+    </body>
+</html>
