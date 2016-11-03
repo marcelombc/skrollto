@@ -3,6 +3,7 @@
   "version": "1.0.1",
   "description": "Lightweight cross-browser animated scrolling",
   "main": "lib/skrollto.js",
+  "jsnext:main": "src/index.js",
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com:marcelombc/skrollto.git"
